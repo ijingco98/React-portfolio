@@ -1,13 +1,45 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Julius+Sans+One&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@layer base {
+    html {
+    font-family: 'Julius Sans One', sans-serif;
+    }
+  }
+
+#homePage{
+  background-image: url('./assets/backdrop/3.png'), linear-gradient(180deg, rgb(250 204 21), rgb(254 240 138), rgb(254 249 195));
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#aboutPage{
+  background-image: url('./assets/backdrop/6.png'), linear-gradient(180deg, rgb(254 249 195), rgb(254 240 138), rgb(250 204 21));
+  background-size: cover;
+}
+#portfolioPage{
+  background-image: url('./assets/backdrop/4.png'), linear-gradient(180deg, rgb(250 204 21), rgb(254 240 138), rgb(254 249 195));
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#experincePage{
+  background-image: url('./assets/backdrop/2.png'), linear-gradient(180deg, rgb(254 249 195), rgb(254 240 138), rgb(250 204 21));
+  background-size: cover;
+}
+#contactPage{
+  background-image: url('./assets/backdrop/1.png'), linear-gradient(180deg, rgb(250 204 21), rgb(254 240 138), rgb(254 249 195));
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#aboutBody{
+  background-image: linear-gradient(180deg, rgba(253, 231, 140, 0), rgba(254, 240, 138, 0.248), rgba(254, 226, 195, 0.549));
+  border-radius: 5%;
+  padding: 5%;
+}
+#aboutHome{
+  background-image: linear-gradient(180deg, rgba(253, 230, 140, 0.716), rgba(254, 240, 138, 0.248), rgba(254, 226, 195, 0.3));
+  border-radius: 5%;
 }
