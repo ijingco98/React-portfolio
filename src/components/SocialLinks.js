@@ -2,6 +2,7 @@ import React from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
+import resume from "../assets/portfolio/resume.pdf"
 
 const SocialLinks = () => {
   const links = [
@@ -22,7 +23,7 @@ const SocialLinks = () => {
           GitHub <FaGithub size={30} />
         </>
       ),
-      href: "https://github.com/",
+      href: "https://github.com/ijingco98",
     },
     {
       id: 3,
@@ -40,7 +41,7 @@ const SocialLinks = () => {
           Resume <BsFillPersonLinesFill size={30} />
         </>
       ),
-      href:"../assets/portfolio/resume.pdf",
+      href:{resume},
       style: "rounded-br-md",
       download: true,
     },
@@ -49,7 +50,7 @@ const SocialLinks = () => {
   return (
     <div className="hidden lg:flex flex-col top-[35%] left-0 fixed">
       <ul>
-        {links.map(({ id, child, href, style, download }) => (
+        {links.map(({ id, child, href, style, download, resume }) => (
           <li
             key={id}
             className={
@@ -59,7 +60,7 @@ const SocialLinks = () => {
             }
           >
             <a
-              href={"../assets/portfolio/resume.pdf"}
+              href={href}
               className="flex justify-between items-center w-full text-white"
               download={download}
               target="_blank"
