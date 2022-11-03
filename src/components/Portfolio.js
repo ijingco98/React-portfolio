@@ -11,27 +11,32 @@ const Portfolio = () => {
       id: 1,
       src: jsGame,
       githubLink: "https://github.com/ijingco98/Whac-a-Unicorn.git",
+      demolink:"https://whackaunicorn.netlify.app/index.html"
     },
     {
       id: 2,
       src: reactTodo,
       githubLink: "https://github.com/ijingco98/To-do-App.git",
+      demolink:"https://todoappreact22.herokuapp.com"
     },
     {
       id: 3,
       src: reactResto,
       githubLink: "https://github.com/ijingco98/Resto-App.git",
+      demolink:"https://restoapp22.herokuapp.com/shop"
 
     },
     {
       id: 4,
       src: backEnd,
       githubLink: " ",
+      demolink:" "
     },
     {
       id: 5,
       src: mern,
       githubLink: "https://github.com/ijingco98/Dalluyon-web.git",
+      demolink:" "
     }
   ];
 
@@ -49,18 +54,16 @@ const Portfolio = () => {
         </div>
 
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
-          {portfolios.map(({ id, src, githubLink }) => (
-            <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
+          {portfolios.map(({ id, src, githubLink, demolink}) => (
+            <div key={id} className="shadow-md shadow-gray-600 rounded-lg bg-gradient-to-b from-yellow-400 to-yellow-200">
               <img
                 src={src}
                 alt=""
                 className="rounded-md duration-200 hover:scale-105"
               />
               <div className="flex items-center justify-center">
-                <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
-                  Demo
-                </button>
-                <a href={githubLink} target="_blank" className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105" >Code</a>
+                <a href={demolink} target="_blank" className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105 font-black text-2xl"> DEMO</a>
+                <a href={githubLink} target="_blank" className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105 font-black text-2xl">Code</a>
               </div> 
             </div>
           ))}
