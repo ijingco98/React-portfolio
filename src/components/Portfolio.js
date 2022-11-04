@@ -2,7 +2,6 @@ import React from "react";
 import jsGame from "../assets/portfolio/jsGame.png";
 import reactTodo from "../assets/portfolio/reactTodo.png";
 import reactResto from "../assets/portfolio/reactResto.png";
-import backEnd from "../assets/portfolio/backEnd.png";
 import mern from "../assets/portfolio/mern.png";
 import hapag from "../assets/portfolio/hapagPic.png";
 
@@ -37,7 +36,7 @@ const Portfolio = () => {
       id: 5,
       src: mern,
       githubLink: "https://github.com/ijingco98/Dalluyon-web.git",
-      demolink:" "
+      demolink:"https://github.com/ijingco98"
     }
   ];
 
@@ -59,7 +58,7 @@ const Portfolio = () => {
             <div key={id} className="shadow-md shadow-gray-600 rounded-lg bg-gradient-to-b from-yellow-400 to-yellow-200">
               <img
                 src={src}
-                alt=""
+                alt=" projects "
                 className="rounded-md duration-200 hover:scale-105"
               />
               <div className="flex items-center justify-center">
